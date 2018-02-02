@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textColor="#FF2D43B3"
+        android:id="@+id/item_title"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_state"
+            android:layout_marginLeft="10dp"
+            android:text="date"
+            android:textAppearance="@style/TextAppearance.Compat.Notification.Title.Media" />
+
+        <TextView
+            android:id="@+id/item_state"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="state"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+
+</LinearLayout>
